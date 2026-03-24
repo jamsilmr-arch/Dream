@@ -54,6 +54,15 @@
             border-radius: 4px;
             color: var(--text-sub);
             font-size: 0.85rem;
+            overflow: hidden; /* 이미지가 박스를 벗어나지 않도록 */
+        }
+
+        /* 추가된 이미지 스타일 */
+        .embedded-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* 이미지가 비율을 유지하며 영역을 꽉 채움 */
+            display: block;
         }
 
         /* 인용구 */
@@ -116,7 +125,9 @@
     <section>
         <h2>[성찰] 분재의 철사를 풀어줄 시간</h2>
         <p>유연하게 잘 휘어지는 시기에 철사를 감아 교정하는 것도 중요하지만, 어느 정도 시기가 되면 철사를 풀어줘야 합니다. 사람도 똑같습니다. 제자들을 작은 화분에 가둔 건 아닌지 반성하는 시간입니다.</p>
-        <div class="img-box">성장의 틀을 상징하는 오브제 (Concept_Still_02)</div>
+        <div class="img-box">
+            <img src="image_0.png" alt="분재 철사로 감겨 있는 나뭇가지" class="embedded-img">
+        </div>
     </section>
 
     <section>
