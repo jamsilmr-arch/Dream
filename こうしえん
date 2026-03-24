@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고시엔: 찰나의 뜨거움, 영원의 기억</title>
+    <style>
+        /* 보색 대비 기반의 다크 모드 디자인 (Navy & Gold/Orange) */
+        :root {
+            --bg-color: #0A192F;       /* Deep Navy */
+            --point-color: #FF8C00;    /* Dark Orange (보색 포인트) */
+            --text-main: #E6F1FF;      /* Off-White */
+            --text-sub: #8892B0;       /* Muted Blue-Grey */
+            --accent-gold: #FFD700;    /* Gold for Highlight */
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            word-break: keep-all;
+        }
+
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+
+        /* Header & Hero */
+        header { text-align: center; padding: 100px 0; border-bottom: 1px solid var(--text-sub); }
+        .badge { color: var(--point-color); font-weight: bold; font-size: 1.2rem; }
+        h1 { font-size: 3rem; margin: 20px 0; color: var(--accent-gold); }
+        
+        /* Section Styling */
+        section { margin: 80px 0; }
+        h2 { font-size: 1.8rem; border-left: 5px solid var(--point-color); padding-left: 15px; margin-bottom: 30px; }
+        
+        /* Blockquote 스타일 */
+        blockquote {
+            background: rgba(255, 140, 0, 0.1);
+            border-radius: 10px;
+            padding: 30px;
+            margin: 40px 0;
+            font-style: italic;
+            border-left: 4px solid var(--point-color);
+        }
+
+        /* 4대 상징 Grid */
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .card { background: rgba(255, 255, 255, 0.05); padding: 20px; border-radius: 8px; border: 1px solid var(--text-sub); }
+        .card h3 { color: var(--point-color); margin-top: 0; }
+
+        /* Image Placeholder */
+        .img-box {
+            width: 100%;
+            height: 400px;
+            background: #112240;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+            border-radius: 12px;
+            color: var(--text-sub);
+            border: 1px dashed var(--text-sub);
+        }
+
+        footer { text-align: center; padding: 100px 0; background: #020C1B; }
+        .cta-btn {
+            background: var(--point-color);
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            display: inline-block;
+            transition: 0.3s;
+        }
+        .cta-btn:hover { transform: scale(1.05); background: #e67e00; }
+
+        @media (max-width: 600px) {
+            .grid { grid-template-columns: 1fr; }
+            h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <p class="badge">평균 관중 100만 명의 대기록</p>
+        <h1>넷플릭스 "꿈의 구장 고시엔"</h1>
+        <p>찰나의 뜨거움이 영원의 기억이 되는 공간</p>
+    </header>
+
+    <div class="img-box">고시엔 경기장 전경 이미지 (Koshien_Stadium.jpg)</div>
+
+    <section>
+        <h2>실패가 허용되지 않는 화려한 무대</h2>
+        <p>고시엔이 '꿈의 구장'인 이유는 그곳이 <strong>'실패가 허용되지 않는 가장 화려한 무대'</strong>이자, <strong>'인생에서 가장 뜨거운 한때를 증명하는 물리적 증거'</strong>이기 때문입니다.</p>
+        <blockquote>
+            "실패란 더 나은 방법으로 재도전할 수 있는 멋진 기회다"
+        </blockquote>
+    </section>
+
+    <section>
+        <h2>[성찰] 분재의 철사를 풀어줄 시간</h2>
+        <div class="img-box">분재와 철사 이미지 (Bonsai_Art.jpg)</div>
+        <p>식물을 작은 화분에 심으면 작게 자라지만 땅에 심으면 크게 자랍니다. 제자들을 작은 화분에 가둔 건 아닌지 반성했습니다. 유연하게 잘 휘어지는 시기에 철사를 감아 교정하는 것도 중요하지만, <strong>어느 정도 시기가 되면 철사를 풀어줘야 합니다.</strong> 사람도 똑같습니다.</p>
+    </section>
+
+    <section>
+        <h2>[분석] 고시엔의 4대 상징</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>완결된 서사</h3>
+                <p>3년이라는 짧은 기한이 정해진 '비일상'. 패배하는 순간 영원히 종료되는 비가역성이 대중을 매료시킵니다.</p>
+            </div>
+            <div class="card">
+                <h3>단판 승부의 논리</h3>
+                <p>단 한 번의 실수로 탈락하는 토너먼트는 잔혹하지만, 매 순간을 벚꽃처럼 아름다운 '최후'로 만듭니다.</p>
+            </div>
+            <div class="card">
+                <h3>검은 흙의 리추얼</h3>
+                <p>패자가 흙을 유니폼에 담아가는 행위는 실패를 수용하고 자양분으로 치환하는 치유의 의식입니다.</p>
+            </div>
+            <div class="card">
+                <h3>자기희생의 미학</h3>
+                <p>팀을 위해 몸을 던지는 행위는 일본 사회가 이상적으로 여기는 헌신의 정점입니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>[현실] 변하지 않는 자에게 명단은 없다</h2>
+        <p><strong>"변한 게 없으면 널 명단에 넣을 수 없어."</strong><br>
+        민하 씨와의 대화는 뼈아픈 진실을 관통합니다. 어영부영 넘어가면 인생 전체가 그렇게 될지 모른다는 경고, 하지만 마지막까지 끈기 있게 한 것을 높이 사는 리더의 시선이 공존합니다.</p>
+    </section>
+
+    <section>
+        <h2>[확장] 위험한 도전의 가치</h2>
+        <p>짐 캐리의 아버지는 안정을 위해 꿈을 포기하고 회계사가 되었지만 결국 해고당했습니다. 이를 본 소년 짐 캐리는 깨달았습니다. <strong>"무슨 일을 택하든 위험은 있다면, 나는 하고 싶은 일을 하겠다."</strong></p>
+    </section>
+
+    <footer>
+        <h2>당신의 '꿈의 구장'은 어디입니까?</h2>
+        <p>4번 타자에게는 아무도 뻔한 직구를 던지지 않습니다.<br>변화구를 기다렸다는 듯이 멀리 날려버리세요.</p>
+        <br>
+        <a href="#" class="cta-btn">나의 무대 찾기</a>
+    </footer>
+</div>
+
+</body>
+</html>
