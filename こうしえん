@@ -5,89 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>고시엔: 찰나의 뜨거움, 영원의 기억</title>
     <style>
-        /* 미술관 스타일의 밝은 테마 (Sky & Clay) */
+        /* Pantone Cloud Dancer & WGSN Transformative Teal Theme */
         :root {
-            --bg-gallery: #F9FAFB;
-            --text-main: #111827;
-            --text-sub: #4B5563;
-            --blue-point: #2563EB;   /* 보색 1: 청춘의 파란색 */
-            --orange-point: #F59E0B; /* 보색 2: 열정의 오렌지 */
-            --border-color: #E5E7EB;
+            --bg-cloud-dancer: #F0EEE9;    /* 부드러운 화이트 톤 */
+            --teal-point: #005D6E;         /* 트랜스포머티브 틸 (핵심 포인트) */
+            --clay-accent: #C27D63;        /* 보색: 고시엔의 흙을 닮은 테라코타 */
+            --text-obsidian: #1F2937;      /* 가독성 높은 차콜 */
+            --text-sub: #6B7280;
+            --border: #D1D5DB;
         }
 
         body {
-            background-color: var(--bg-gallery);
-            color: var(--text-main);
-            font-family: 'Pretendard', sans-serif;
-            line-height: 1.6;
+            background-color: var(--bg-cloud-dancer);
+            color: var(--text-obsidian);
+            font-family: 'Pretendard', -apple-system, sans-serif;
+            line-height: 1.7;
             margin: 0;
             padding: 0;
-            letter-spacing: -0.02em; /* 미술관 특유의 정갈한 자간 */
+            word-break: keep-all;
         }
 
-        .container { max-width: 900px; margin: 0 auto; padding: 60px 20px; }
+        .container { max-width: 850px; margin: 0 auto; padding: 80px 24px; }
 
-        /* Hero Section: 전시회 입구 느낌 */
+        /* Hero Section */
         header { 
             text-align: left; 
-            padding: 120px 0; 
-            border-bottom: 2px solid var(--text-main); 
-            margin-bottom: 100px;
+            padding: 100px 0; 
+            border-bottom: 1px solid var(--teal-point); 
+            margin-bottom: 80px;
         }
-        .badge { color: var(--blue-point); font-weight: 700; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.1em; }
-        h1 { font-size: 3.5rem; font-weight: 800; margin: 15px 0; line-height: 1.1; }
+        .badge { color: var(--teal-point); font-weight: 700; font-size: 0.9rem; letter-spacing: 0.15em; }
+        h1 { font-size: 3.8rem; font-weight: 800; margin: 20px 0; line-height: 1.1; color: var(--teal-point); }
         
-        /* Section: 작품 전시 공간 */
-        section { margin-bottom: 150px; }
-        h2 { font-size: 2rem; font-weight: 700; margin-bottom: 40px; display: flex; align-items: center; }
-        h2::before { content: ""; width: 24px; height: 4px; background: var(--orange-point); margin-right: 15px; }
+        /* Section Styling */
+        section { margin-bottom: 120px; }
+        h2 { font-size: 1.8rem; font-weight: 700; margin-bottom: 30px; color: var(--teal-point); display: flex; align-items: center; }
+        h2::after { content: ""; flex: 1; height: 1px; background: var(--border); margin-left: 20px; }
         
-        /* 고시엔의 4대 상징 카드: 미니멀 리스트 */
-        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
-        .card { border-top: 1px solid var(--text-main); padding-top: 20px; }
-        .card h3 { font-size: 1.2rem; color: var(--blue-point); margin-bottom: 10px; }
-
-        /* 이미지 박스: 캔버스 느낌 */
+        /* 이미지 박스 */
         .img-box {
             width: 100%;
             aspect-ratio: 16 / 9;
-            background: #EDF2F7;
+            background: #E5E7EB;
             margin: 40px 0;
             display: flex;
             align-items: center;
             justify-content: center;
+            border-radius: 4px;
             color: var(--text-sub);
-            font-size: 0.9rem;
-            border: 1px solid var(--border-color);
+            font-size: 0.85rem;
         }
 
-        /* 인용구: 벽면에 새겨진 글귀 스타일 */
+        /* 인용구 */
         blockquote {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             font-weight: 500;
-            color: var(--text-sub);
-            border-left: none;
-            padding: 60px 0;
+            color: var(--text-obsidian);
+            padding: 50px 0;
             margin: 60px 0;
             text-align: center;
-            border-top: 1px solid var(--border-color);
-            border-bottom: 1px solid var(--border-color);
+            border-top: 1px double var(--teal-point);
+            border-bottom: 1px double var(--teal-point);
         }
-        blockquote strong { color: var(--orange-point); }
+        blockquote strong { color: var(--clay-accent); }
 
-        /* CTA: 전시의 결말 */
-        footer { text-align: center; padding: 150px 0 100px; }
+        /* 4대 상징 Grid */
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+        .card { padding: 25px; background: rgba(255,255,255,0.4); border: 1px solid var(--border); transition: 0.3s; }
+        .card:hover { border-color: var(--teal-point); transform: translateY(-5px); }
+        .card h3 { color: var(--teal-point); margin-top: 0; font-size: 1.25rem; }
+
+        /* CTA */
+        footer { text-align: center; padding: 100px 0; }
         .cta-btn {
-            background-color: var(--text-main); /* 미술관의 정갈함 */
-            color: #FFF;
-            padding: 18px 45px;
+            background-color: var(--teal-point);
+            color: var(--bg-cloud-dancer);
+            padding: 20px 60px;
             text-decoration: none;
-            font-weight: 600;
-            font-size: 1.1rem;
+            font-weight: 700;
+            font-size: 1.2rem;
             display: inline-block;
-            transition: 0.2s;
+            box-shadow: 0 10px 20px rgba(0, 93, 110, 0.2);
+            transition: 0.3s;
         }
-        .cta-btn:hover { background-color: var(--blue-point); transform: translateY(-3px); }
+        .cta-btn:hover { background-color: var(--text-obsidian); transform: translateY(-3px); }
 
         @media (max-width: 600px) {
             h1 { font-size: 2.5rem; }
@@ -99,53 +100,13 @@
 
 <div class="container">
     <header>
-        <p class="badge">Today's Exhibition: Netflix Original</p>
-        <h1>꿈의 구장<br>고시엔</h1>
-        <p style="font-size: 1.2rem; color: var(--text-sub);">찰나의 뜨거움이 영원의 기억이 되는 공간</p>
+        <p class="badge">A STUDY ON KOSHIEN</p>
+        <h1>꿈의 구장,<br>고시엔</h1>
+        <p style="font-size: 1.3rem; color: var(--text-sub);">찰나의 뜨거움이 영원의 기억이 되는 공간</p>
     </header>
 
     <section>
-        <div class="img-box">고시엔 경기장 전경 (Main_Archive_01.jpg)</div>
+        <div class="img-box">고시엔의 검은 흙과 푸른 하늘 (Archive_View_01)</div>
         <p>고시엔이 '꿈의 구장'인 이유는 그곳이 <strong>'실패가 허용되지 않는 가장 화려한 무대'</strong>이자, <strong>'인생에서 가장 뜨거운 한때를 증명하는 물리적 증거'</strong>이기 때문입니다.</p>
         <blockquote>
-            "실패란 더 나은 방법으로 <br><strong>재도전할 수 있는</strong> 멋진 기회다"
-        </blockquote>
-    </section>
-
-    <section>
-        <h2>분재의 철사를 풀어줄 시간</h2>
-        <p>식물을 작은 화분에 심으면 작게 자라지만 큰 화분에 심으면 크게 자랍니다. 유연하게 휘어지는 시기에 철사를 감아 교정하는 것도 중요하지만, 어느 정도 시기가 되면 <strong>철사를 풀어줘야 합니다.</strong></p>
-        <div class="img-box">분재와 철사의 대비 (Botanical_Study_02.jpg)</div>
-    </section>
-
-    <section>
-        <h2>고시엔의 4대 상징</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>완결된 서사</h3>
-                <p>3년이라는 기한이 정해진 비일상. 패배하는 순간 그 세대의 야구는 영원히 종료됩니다.</p>
-            </div>
-            <div class="card">
-                <h3>단판 승부의 논리</h3>
-                <p>단 한 번의 실수로 탈락하는 토너먼트는 매 순간을 '최후'라는 비장미로 채웁니다.</p>
-            </div>
-            <div class="card">
-                <h3>검은 흙의 리추얼</h3>
-                <p>패자가 흙을 유니폼에 담아가는 의식은 실패를 인생의 자양분으로 치환하는 치유의 과정입니다.</p>
-            </div>
-            <div class="card">
-                <h3>자기희생의 미학</h3>
-                <p>팀을 위해 몸을 던지는 행위는 공동체를 향한 헌신의 정점으로 추앙받습니다.</p>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <h2 style="justify-content: center; border: none;">당신의 '꿈의 구장'은 어디입니까?</h2>
-        <p style="margin-bottom: 40px;">지금, 당신의 무대에 다가서고 있나요?</p>
-        <a href="#" class="cta-btn">전시 관람 마치기</a>
-    </footer>
-</div>
-
-</body>
-</html>
+            "실패란 더 나
