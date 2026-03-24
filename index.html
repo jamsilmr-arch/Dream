@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>고시엔: 찰나의 뜨거움, 영원의 기억</title>
+    <title>고시엔: 당신의 철사를 풀어줄 시간</title>
     <style>
-        /* [Color Palette] */
         :root {
-            --bg-cloud-dancer: #F0EEE9;    /* Pantone: Cloud Dancer */
-            --teal-transformative: #005D6E; /* WGSN: Transformative Teal */
-            --clay-accent: #C27D63;        /* Secondary: 고시엔의 흙 (테라코타) */
-            --text-obsidian: #1F2937;      /* Primary Text */
-            --text-sub: #6B7280;           /* Secondary Text */
+            --bg-cloud-dancer: #F0EEE9;
+            --teal-transformative: #005D6E;
+            --clay-accent: #C27D63;
+            --text-obsidian: #1F2937;
+            --text-sub: #6B7280;
             --border: #D1D5DB;
         }
 
@@ -27,23 +26,20 @@
 
         .container { max-width: 800px; margin: 0 auto; padding: 100px 24px; }
 
-        /* [Header] */
         header { 
             text-align: left; 
             padding-bottom: 60px;
             border-bottom: 2px solid var(--teal-transformative);
             margin-bottom: 80px;
         }
-        .intro-stat { color: var(--clay-accent); font-weight: 700; font-size: 1rem; letter-spacing: 0.05em; margin-bottom: 10px; }
-        h1 { font-size: 3.5rem; font-weight: 800; margin: 10px 0; color: var(--teal-transformative); line-height: 1.2; }
-        .subtitle { font-size: 1.2rem; color: var(--text-sub); margin-top: 10px; }
+        .intro-stat { color: var(--clay-accent); font-weight: 700; font-size: 1rem; letter-spacing: 0.05em; }
+        h1 { font-size: 3.5rem; font-weight: 800; margin: 15px 0; color: var(--teal-transformative); line-height: 1.2; }
+        .subtitle { font-size: 1.2rem; color: var(--text-sub); }
 
-        /* [Common Section] */
-        section { margin-bottom: 120px; }
-        .section-tag { font-weight: 700; color: var(--teal-transformative); margin-bottom: 10px; display: block; font-size: 0.9rem; }
-        h2 { font-size: 2rem; font-weight: 800; margin-bottom: 30px; letter-spacing: -0.03em; }
+        section { margin-bottom: 150px; }
+        .section-tag { font-weight: 700; color: var(--teal-transformative); margin-bottom: 10px; display: block; font-size: 0.9rem; text-transform: uppercase; }
+        h2 { font-size: 2.2rem; font-weight: 800; margin-bottom: 35px; letter-spacing: -0.03em; }
         
-        /* [Image Box] */
         .img-wrap {
             width: 100%;
             background: #E5E7EB;
@@ -52,58 +48,39 @@
             overflow: hidden;
             border: 1px solid var(--border);
         }
-        .img-wrap img { width: 100%; height: auto; display: block; object-fit: cover; }
-        .img-caption { font-size: 0.85rem; color: var(--text-sub); text-align: right; margin-top: 8px; }
+        .img-wrap img { width: 100%; height: auto; display: block; }
 
-        /* [Quote Box] */
         .quote-container {
             margin: 60px 0;
-            padding: 40px;
+            padding: 50px;
             background: rgba(0, 93, 110, 0.03);
-            border-left: 4px solid var(--teal-transformative);
-            font-size: 1.2rem;
+            border-left: 5px solid var(--teal-transformative);
+            font-size: 1.25rem;
             font-weight: 500;
+            line-height: 1.6;
         }
-        .quote-container p { margin: 10px 0; }
 
-        /* [4 Symbols Grid] */
         .symbol-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px; }
-        .symbol-card { 
-            padding: 30px; 
-            border: 1px solid var(--border); 
-            background: #fff;
-            transition: 0.3s ease;
-        }
-        .symbol-card:hover { border-color: var(--teal-transformative); transform: translateY(-5px); }
+        .symbol-card { padding: 30px; border: 1px solid var(--border); background: #fff; }
         .symbol-card h3 { color: var(--teal-transformative); margin-top: 0; font-size: 1.2rem; }
-        .symbol-card p { font-size: 0.95rem; color: var(--text-sub); margin-bottom: 0; }
 
-        /* [Dialogue Section] */
-        .dialogue { background: #fff; padding: 40px; border: 1px solid var(--border); }
+        .dialogue { background: #fff; padding: 45px; border: 1px solid var(--border); position: relative; }
+        .dialogue::before { content: "SCENE"; position: absolute; top: -12px; left: 20px; background: var(--teal-transformative); color: #fff; padding: 2px 12px; font-size: 0.75rem; font-weight: 700; }
         .name { font-weight: 700; color: var(--teal-transformative); margin-right: 10px; }
 
-        /* [Footer / Conclusion] */
-        footer { 
-            text-align: center; 
-            padding: 150px 0 100px; 
-            border-top: 1px solid var(--border);
-        }
+        footer { text-align: center; padding: 150px 0 100px; border-top: 1px solid var(--border); }
         .final-cta {
             background-color: var(--teal-transformative);
             color: var(--bg-cloud-dancer);
-            padding: 20px 50px;
+            padding: 22px 65px;
             text-decoration: none;
             font-weight: 700;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             display: inline-block;
-            transition: 0.3s;
+            transition: 0.3s ease;
             box-shadow: 0 10px 20px rgba(0, 93, 110, 0.2);
         }
-        .final-cta:hover { 
-            background-color: var(--text-obsidian); 
-            transform: translateY(-3px);
-            box-shadow: 0 15px 30px rgba(0, 93, 110, 0.3);
-        }
+        .final-cta:hover { background-color: var(--text-obsidian); transform: translateY(-5px); }
 
         @media (max-width: 600px) {
             h1 { font-size: 2.5rem; }
@@ -115,89 +92,79 @@
 
 <div class="container">
     <header>
-        <p class="intro-stat">평균 관중 100만 명의 대기록</p>
-        <h1>넷플릭스<br>"꿈의 구장 고시엔"</h1>
-        <p class="subtitle">찰나의 뜨거움이 영원의 기억이 되는 공간</p>
+        <p class="intro-stat">연 관중 100만 명, 일본 전역을 뒤흔드는 고교 야구 축제</p>
+        <h1>꿈의 구장,<br>고시엔을 아십니까</h1>
+        <p class="subtitle">넷플릭스 "꿈의 구장 고시엔"이 던지는 인생의 화두</p>
     </header>
 
     <section>
-        <p>고시엔이 '꿈의 구장'인 이유는 그곳이 <strong>'실패가 허용되지 않는 가장 화려한 무대'</strong>이자, <strong>'인생에서 가장 뜨거운 한때를 증명하는 물리적 증거'</strong>이기 때문입니다. 일본인들에게 고시엔은 야구장을 넘어, 지나간 청춘에 대한 경의이자 현재를 살아가는 활력소로서 기능하는 것입니다.</p>
-        
-        <div class="quote-container">
-            <p>"절대 못할 거라고 생각하지 마. 우리 때도 그랬어. 그래도 도전해야 해."</p>
-            <p style="color: var(--clay-accent);">"실패란 더 나은 방법으로 재도전할 수 있는 멋진 기회다."</p>
+        <span class="section-tag">[분석] SYSTEM</span>
+        <h2>왜 그들은 이토록 열광하는가</h2>
+        <p>고시엔은 단순한 스포츠 대회가 아닙니다. 일본인들에게 그것은 <strong>'다시는 돌아올 수 없는 시간'</strong>을 물리적으로 증명하는 성소입니다. 처음 접하는 이들을 위해 고시엔의 4대 상징을 정리했습니다.</p>
+        <div class="symbol-grid">
+            <div class="symbol-card">
+                <h3>완결된 서사</h3>
+                <p>3년이라는 정해진 기한. 패배하는 순간 그 세대의 야구는 영원히 종료되는 비가역적 드라마.</p>
+            </div>
+            <div class="symbol-card">
+                <h3>단판 승부의 비장미</h3>
+                <p>단 한 번의 실수로 탈락하는 토너먼트 방식은 매 순간을 '최후'로 만듭니다.</p>
+            </div>
+            <div class="symbol-card">
+                <h3>검은 흙의 리추얼</h3>
+                <p>패자가 흙을 유니폼에 담아가는 행위는 실패를 수용하고 자양분으로 치환하는 의식입니다.</p>
+            </div>
+            <div class="symbol-card">
+                <h3>자기희생의 미학</h3>
+                <p>팀의 승리를 위해 자신을 던지는 헌신. 일본 사회가 추구하는 집단적 이상향의 정점.</p>
+            </div>
         </div>
     </section>
 
     <section>
         <span class="section-tag">[성찰] REFLECTION</span>
         <h2>분재의 철사를 풀어줄 시간</h2>
-        <p>식물을 작은 화분에 심으면 작게 자라지만 땅에 심으면 크게 자랍니다. 제자들을 작은 화분에 가둔 건 아닌지 반성했습니다. </p>
-        <p>유연하게 잘 휘어지는 시기에 철사를 감아서 교정하는 게 중요하지만, 어느 정도 시기가 되면 철사를 풀어줘야 합니다. <strong>사람도 똑같습니다.</strong></p>
+        <p>식물을 작은 화분에 심으면 작게 자라지만, 넓은 땅에 심으면 크게 자랍니다. 유연하게 휘어지는 시기에 철사를 감아 교정하는 것도 필요하지만, <strong>때가 되면 그 철사를 반드시 풀어줘야 합니다.</strong></p>       
+        <div class="quote-container">
+            <p>우리 역시 보이지 않는 철사에 감겨있는지도 모릅니다. 사회가 정한 기준, 실패에 대한 두려움, 스스로 만든 한계라는 이름의 철사들 말입니다.</p>
+            <p style="color: var(--teal-transformative); font-weight: 700;">"이제 당신을 옥죄고 있던 그 철사를 풀어낼 시간입니다. 당신이 얼마나 크게 자랄 수 있는지 확인해야 하니까요."</p>
+        </div>
     </section>
 
     <section>
         <span class="section-tag">[목적] PURPOSE</span>
-        <h2>인격의 완성: 2년 반의 진정한 가치</h2>
-        <p>2년 반 동안 야구부에서 배운 걸 인생의 자양분으로 삼는 게 중요해. 찰나보다 평생이 중요한 거야.</p>
+        <h2>헛되게 흘러가는 시간은 없다</h2>
+        <p>고시엔에 나가는 건 찰나의 순간입니다. 하지만 2년 반 동안 흘린 땀방울은 평생의 자양분이 됩니다. <strong>당신이 보낸 지난 시간들 중 허투루 쓰인 것은 단 1초도 없었습니다.</strong></p>
+        
         <div class="dialogue">
             <p><span class="name">감독:</span> 요코하마 하야토 고등학교에는 왜 들어왔나? 민하?</p>
             <p><span class="name">민하:</span> 인격 수양을 제대로 하고 싶어서요.</p>
-            <p><span class="name">감독:</span> 그렇지? 사람으로서 성장하기 위해 들어온 거야. 다들 성장했나?</p>
+            <p><span class="name">감독:</span> 사람으로서 성장하기 위해 들어온 거야. 다들 성장했나?</p>
             <p><span class="name">민하:</span> 네.</p>
-            <p><span class="name">감독:</span> 그럼 된 거야.</p>
+            <p><span class="name">감독:</span> 그럼 된 거야. 그 경험이 평생 너를 지탱할 테니까.</p>
         </div>
+        <p style="margin-top: 30px;">비록 결과가 화려하지 않았더라도, 그 무대를 위해 고민하고 부딪혔던 모든 과정이 당신의 인격을 완성해왔습니다. <strong>당신은 시간을 허비한 것이 아니라, 더 큰 도약을 위한 토양을 다져온 것입니다.</strong></p>
     </section>
 
     <section>
-        <span class="section-tag">[현실] REALITY</span>
-        <h2>실패를 직시하는 용기</h2>
-        <p>가을에도 봄에도 실수했지? 변한 게 없으면 널 명단에 넣을 수 없어. 어영부영 넘어가면 또 어떻게든 되겠지 그런 마음이 생길지 몰라.</p>
-        <p style="color: var(--clay-accent); font-weight: 700;">"이 분함을 잊지 마라. 절대 잊어서는 안 돼."</p>
-    </section>
-
-    <section>
-        <span class="section-tag">[분석] SYMBOLS</span>
-        <h2>흙과 눈물: 고시엔의 4대 상징</h2>
-        <div class="symbol-grid">
-            <div class="symbol-card">
-                <h3>완결된 서사</h3>
-                <p>3년이라는 기한이 정해진 '비일상'. 패배하는 순간 그 세대의 야구는 영원히 종료되는 비가역성.</p>
-            </div>
-            <div class="symbol-card">
-                <h3>단판 승부의 논리</h3>
-                <p>단 한 번의 실수로 탈락하는 잔혹함. 그렇기에 매 순간이 '최후'라는 비장미를 줍니다.</p>
-            </div>
-            <div class="symbol-card">
-                <h3>흙을 담는 행위</h3>
-                <p>실패를 수용하고 그것을 인생의 자양분으로 치환하려는 치유의 리추얼(Ritual).</p>
-            </div>
-            <div class="symbol-card">
-                <h3>자기희생의 미학</h3>
-                <p>개인의 기록보다 팀의 승리를 위해 몸을 던지는 집단주의적 헌신의 정점.</p>
-            </div>
+        <span class="section-tag">[도전] CHALLENGE</span>
+        <h2>위험한 도전이 안전한 실패보다 낫다</h2>
+        <p>안정을 위해 꿈을 포기했던 짐 캐리의 아버지는 결국 직장에서 해고당했습니다. 짐 캐리는 거기서 역설적인 진리를 깨달았습니다. <strong>"어차피 실패할 수 있다면, 내가 사랑하는 일을 하다가 실패하는 게 낫다."</strong></p>
+        
+        <div class="quote-container" style="border: none; background: none; text-align: center;">
+            <p>"4번 타자에게는 아무도 뻔한 직구를 던지지 않아.<br>항상 변화구에 대비해. 그리고 기다렸다는 듯이 멀리 날려버려."</p>
         </div>
-    </section>
-
-    <section>
-        <span class="section-tag">[확장] EXPANSION</span>
-        <h2>짐 캐리가 깨달은 역설</h2>
-        <p>안정을 위해 꿈을 포기했던 아버지가 결국 해고당하는 것을 보며 짐 캐리는 깨달았습니다. <strong>"무슨 일을 택하던 위험은 있다면, 나는 내가 하고 싶은 일을 하겠다."</strong></p>
     </section>
 
     <footer>
-        <span class="section-tag">[결론] EPILOGUE</span>
-        <h2>당신의 '꿈의 구장'은 어디입니까?</h2>
-        <div class="quote-container" style="border: none; background: none;">
-            <p>"4번 타자에게는 아무도 뻔한 직구를 던지지 않아. 항상 변화구에 대비해. 기다렸다는 듯이 멀리 날려버려."</p>
-        </div>
-        <p style="margin-bottom: 40px;">민하 씨에게 꿈의 무대는 어디였나요? <br> 그 무대에 다가서고 있나요, 멀어지고 있나요?</p>
+        <h2 style="justify-content: center; border: none;">당신의 '꿈의 구장'은 어디입니까?</h2>
+        <p style="color: var(--text-sub); margin-bottom: 50px;">지금 당신의 무대에 다가서고 있나요? <br>아니면 멀어지고 있나요?</p>
         
         <a href="https://www.saramin.co.kr/zf_user/?srsltid=AfmBOoprKeWvTEG4Yd9dhpsnfek07qj2cUenv6Zu2vaqTEXtG-gvEfsu" 
            target="_blank" 
            rel="noopener noreferrer" 
            class="final-cta">
-           나의 무대 응원하기
+           나의 꿈의 무대 찾기
         </a>
     </footer>
 </div>
